@@ -1,17 +1,17 @@
 extend ../layout
 
 block content
-	.container
-	  .row
-	  	form.form-horizontal(method="post",action="/admin/movie/new")
-	  	  .form-group
+    .container
+      .row
+        form.form-horizontal(method="post",action="/admin/movie/new")
+          .form-group
             label.col-sm-3.control-label(for="title") 电影名字
             .col-sm-9
-               input#title.form-control(type="text",name="movie[title]",value="#{movie.title}")
+              input#title.form-control(type="text",name="movie[title]",value="#{movie.title}")
           .form-group
             label.col-sm-3.control-label(for="poster") 海报地址
             .col-sm-9
-               input#poster.form-control(type="text",name="movie[poster]",value="#{movie.poster}")
+              input#poster.form-control(type="text",name="movie[poster]",value="#{movie.poster}")
           .form-group
             label.col-sm-3.control-label(for="flash") 电影地址
             .col-sm-9
@@ -27,15 +27,15 @@ block content
           .form-group
             label.col-sm-3.control-label(for="language") 语言
             .col-sm-9
-                input#language.form-control(type="text",name="movie[language]",value="#{movie.language}")
+              input#language.form-control(type="text",name="movie[language]",value="#{movie.language}")
           .form-group
             label.col-sm-3.control-label(for="year") 上映年份
             .col-sm-9
-                input#year.form-control(type="text",name="movie[year]",value="#{movie.year}")
+              input#year.form-control(type="text",name="movie[year]",value="#{movie.year}")
           .form-group
             label.col-sm-3.control-label(for="summary") 简介
             .col-sm-9
-              Textarea#summary.form-control(type="text",name="movie[summary]") #{movie.  summary}
+              Textarea#summary.form-control(type="text",name="movie[summary]") #{movie.summary}
           .form-group
             .col-sm-offset-3.col-sm-9
-              button.btn.btn-default(type="submit") 确定
+              button.btn.btn-default(type="submit") 录入
