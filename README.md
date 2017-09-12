@@ -1,4 +1,4 @@
-### A movie website learned from Imooc
+### A imooc movie website
 Template Engine——Jade 
 
 Node Web Frame——Express
